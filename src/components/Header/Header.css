@@ -1,0 +1,14 @@
+.header {
+  background-color: #414141;
+  padding: 10px;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.header ul li {
+  color: white;
+}

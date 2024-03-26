@@ -1,7 +1,8 @@
-import Products from "./Products";
-import kursi from "../img/kursi.jpeg";
-import poco from "../img/poco.jpeg";
-import ssd from "../img/ssd.jpeg";
+import Products from "../Products/Products";
+import kursi from "../../img/kursi.jpeg";
+import poco from "../../img/poco.jpeg";
+import ssd from "../../img/ssd.jpeg";
+import "./Main.css";
 
 const Main = () => {
   const products = [
@@ -22,7 +23,7 @@ const Main = () => {
     },
   ];
   return (
-    <>
+    <div className="main">
       {products.map((product) => {
         return (
           <>
@@ -30,13 +31,14 @@ const Main = () => {
               nama={product.nama}
               harga={product.harga}
               image={product.image}
+              beli={() => alert(`${product.nama} berhasil dibeli`)}
             />
             <br />
             <br />
           </>
         );
       })}
-    </>
+    </div>
   );
 };
 

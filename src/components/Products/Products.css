@@ -1,0 +1,22 @@
+.products {
+  background-color: rgb(173, 189, 204);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.products img {
+  border-radius: 10px;
+}
+
+.products-body {
+  padding: 10px;
+}
+
+.products-body button {
+  background-color: rgb(131, 174, 253);
+  padding: 10px 15px;
+  border-radius: 5px;
+  float: right;
+  margin-bottom: 5px;
+  cursor: pointer;
+}

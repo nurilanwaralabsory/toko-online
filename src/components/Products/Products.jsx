@@ -1,9 +1,11 @@
+import "./Products.css";
+
 const Products = (props) => {
-  const { nama, harga, image } = props;
+  const { nama, harga, image, beli } = props;
   return (
-    <div>
+    <div className="products">
       <img src={image} alt="product-image" />
-      <div>
+      <div className="products-body">
         <h3>{nama}</h3>
         <p>
           Rp{" "}
@@ -12,7 +14,7 @@ const Products = (props) => {
             currency: "IDR",
           })}
         </p>
-        <button href="">beli</button>
+        <button onClick={beli}>beli</button>
       </div>
     </div>
   );
