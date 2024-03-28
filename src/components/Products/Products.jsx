@@ -11,7 +11,7 @@ const Products = (props) => {
       <div className="product-details">
         <span className="product-catagory">{nama}</span>
         <h4>
-          <a href="">Women leather bag</a>
+          <a href="">{nama}</a>
         </h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
