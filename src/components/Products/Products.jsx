@@ -3,18 +3,32 @@ import "./Products.css";
 const Products = (props) => {
   const { nama, harga, image, beli } = props;
   return (
-    <div className="products">
-      <img src={image} alt="product-image" />
-      <div className="products-body">
-        <h3>{nama}</h3>
+    <div className="product-card">
+      <div className="badge">Hot</div>
+      <div className="product-tumb">
+        <img src={image} alt="" />
+      </div>
+      <div className="product-details">
+        <span className="product-catagory">{nama}</span>
+        <h4>
+          <a href="">Women leather bag</a>
+        </h4>
         <p>
-          Rp{" "}
-          {harga.toLocaleString("id-ID", {
-            styles: "currency",
-            currency: "IDR",
-          })}
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+          possimus nostrum!
         </p>
-        <button onClick={beli}>beli</button>
+        <div className="product-bottom-details">
+          <div className="product-price">
+            Rp{" "}
+            {harga.toLocaleString("id-ID", {
+              styles: "currency",
+              currency: "IDR",
+            })}
+          </div>
+          <div className="product-links">
+            <button onClick={beli}>Beli</button>
+          </div>
+        </div>
       </div>
     </div>
   );
