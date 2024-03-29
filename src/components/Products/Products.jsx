@@ -1,22 +1,20 @@
 import "./Products.css";
 
 const Products = (props) => {
-  const { nama, harga, image, beli } = props;
+  const { nama, harga, gambar, berat, terjual, beli } = props;
   return (
     <div className="product-card">
       <div className="badge">Hot</div>
       <div className="product-tumb">
-        <img src={image} alt="" />
+        <img src={gambar} alt="" />
       </div>
       <div className="product-details">
         <span className="product-catagory">{nama}</span>
         <h4>
           <a href="">{nama}</a>
         </h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
-          possimus nostrum!
-        </p>
+        <div className="berat">Berat {berat}</div>
+        <div>Terjual {terjual}</div>
         <div className="product-bottom-details">
           <div className="product-price">
             Rp{" "}
